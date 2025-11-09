@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/student_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="header">
+      <h1><%= title %></h1>
+      <p><%= content %></p>
+      
+      
+    </div>
+    <!-- Student Details -->
+    <div class="details-container">
+    <div class="detail-item">
+        <div class="detail-label"> Name </div>
+        <div class="detail-value"><%= student.name %></div>
+    </div>
+
+    <div class="detail-item">
+        <div class="detail-label"> Student Number </div>
+        <div class="detail-value"><%= student.student_number %></div>
+    </div>
+
+    <div class="detail-item">
+        <div class="detail-label"> Email </div>
+        <div class="detail-value"><%= student.email %></div>
+    </div>
+
+    <div class="detail-item">
+        <div class="detail-label"> Phone Number </div>
+        <div class="detail-value"><%= student.phone %></div>
+    </div>
+    </div>
+    
+    <!-- Back Button -->
+    <div class="back-button-container">
+    <a href="/students" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i> Back 
+    </a>
+    </div>
+  </body>
+</html>

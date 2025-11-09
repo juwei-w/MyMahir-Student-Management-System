@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contacts.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title><%= title %></title>
+  </head>    
+
+  <body>
+    <div class="header">
+      <h1><%= title %></h1>
+      <p><%= content %></p>
+    </div>
+
+    <!-- Contact Details Container -->
+    <div class="form-container">
+      <div class="contact-details">
+        <h2><%= contact.name %></h2>
+        <div class="detail-item">
+          <label><i class="fa-solid fa-user"></i> Name:</label>
+          <span><%= contact.name %></span>
+        </div>
+        <div class="detail-item">
+          <label><i class="fa-solid fa-phone"></i> Phone Number:</label>
+          <span><%= contact.phone %></span>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <a href="/contacts" class="back-button">
+          <i class="fa-solid fa-arrow-left"></i> Back to Contacts
+        </a>
+      </div>
+    </div>
+
+  </body>
+</html>
